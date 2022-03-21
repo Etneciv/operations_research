@@ -1,0 +1,73 @@
+.HeaderBody{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(63, 197, 186);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    h1{
+        color:white;
+        font-size:30px;
+        margin-left:10px;
+    }
+    .OptionMenu{
+        border-radius: 5px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .OptionMenuTitle{
+            cursor:pointer;
+            padding: 10px;
+            color:white;
+            font-size: 15px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            img{
+                height:22px;
+                margin-right: 5px;
+            }
+        }
+        .DropdownContent{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            border:1px solid rgba(146, 145, 145, 0.616);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width: 220px;
+            margin-top: 40px;
+            .DropItem{
+                transition-duration: 400ms;
+                cursor: pointer;
+               color:black;
+               font-size: 14px;
+               text-align: center;
+               padding: 8px;
+               text-decoration: none;
+            }
+            .firstItem{
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+            .finalItem{
+                border-top: 1px solid rgba(146, 145, 145, 0.274);
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+            .DropItem:hover{
+                transition-duration: 400ms;
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+            .DropItem:active{
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+        
+    }
+}
